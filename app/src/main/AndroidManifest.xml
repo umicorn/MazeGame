@@ -16,6 +16,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".q1"
+            android:label="@string/title_activity_q1" >
+        </activity>
+        <activity
+            android:name=".Wrong"
+            android:label="@string/title_activity_wrong" >
+        </activity>
+        <activity
+            android:name=".Q2"
+            android:label="@string/title_activity_q2"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jchuah.mazegame.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Q3"
+            android:label="@string/title_activity_q3" >
+        </activity>
+        <activity
+            android:name=".Q4"
+            android:label="@string/title_activity_q4" >
+        </activity>
     </application>
 
 </manifest>

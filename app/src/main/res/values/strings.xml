@@ -3,4 +3,9 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_q1">q1</string>
+    <string name="title_activity_wrong">Wrong</string>
+    <string name="title_activity_q2">Q2</string>
+    <string name="title_activity_q3">Q3</string>
+    <string name="title_activity_q4">Q4</string>
 </resources>
