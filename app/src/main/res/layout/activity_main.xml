@@ -25,6 +25,6 @@
         android:layout_below="@+id/rules"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="174dp"
-        android:onClick="onColorClick" />
+        android:onClick="onButtonClick" />
 
 </RelativeLayout>

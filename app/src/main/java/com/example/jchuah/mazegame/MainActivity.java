@@ -1,31 +1,24 @@
 package com.example.jchuah.mazegame;
 
 import android.content.Intent;
-import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
+
 
 public class MainActivity extends AppCompatActivity {
 
 
     Bundle groceries;
 
-    public void onColorClick(View source) {
-        Intent Q1 = new Intent(this, q1.class);
-        Q1.putExtra("groceries", groceries);
-
-        Button colorButton = (Button) source;
-        ColorDrawable bgColor = (ColorDrawable) source.getBackground();
-
-        groceries.putInt("colorclick", bgColor.getColor());
-
-        startActivity(Q1);
-    }
+   public void onButtonClick(View source) {
+       Intent q1Intent = new Intent(this, com.example.jchuah.mazegame.q1.class);
+       q1Intent.putExtra("groceries" , groceries);
+       startActivity(q1Intent);
+   }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
