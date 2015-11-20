@@ -1,11 +1,28 @@
 package com.example.jchuah.mazegame;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class q1 extends AppCompatActivity {
+
+    Bundle groceries;
+
+public void onButonClickQ1(View source) {
+    Intent Q2Intent = new Intent(this, Q2.class);
+    Q2Intent.putExtra("groceries",groceries);
+
+    startActivity(Q2Intent);
+}
+    public void onButonClick2 (View source){
+        Intent WrongIntent = new Intent(this, Wrong.class);
+        WrongIntent.putExtra("groceries", groceries);
+
+        startActivity(WrongIntent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
