@@ -1,11 +1,23 @@
 package com.example.jchuah.mazegame;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class Wrong extends AppCompatActivity {
+
+    Bundle groceries;
+
+    public void onBackClick(View source){
+        Intent mainActivityIntent = new Intent(this, MainActivity.class);
+        mainActivityIntent.putExtra("groceries", groceries);
+
+        startActivity(mainActivityIntent);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

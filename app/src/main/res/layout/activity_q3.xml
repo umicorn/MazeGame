@@ -33,7 +33,9 @@
         android:text="a drumpet"
         android:id="@+id/drumpet"
         android:layout_alignTop="@+id/tothpaste"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:nestedScrollingEnabled="false"
+        android:onClick="onRightClick" />
 
     <Button
         android:layout_width="wrap_content"

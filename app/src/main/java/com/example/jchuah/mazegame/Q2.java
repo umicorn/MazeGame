@@ -21,6 +21,8 @@ public class Q2 extends AppCompatActivity {
     public void onClickwrong(View source) {
         Intent WrongIntent = new Intent(this, Wrong.class);
         WrongIntent.putExtra("groceries", groceries);
+
+        startActivity(WrongIntent);
     }
     
     @Override
