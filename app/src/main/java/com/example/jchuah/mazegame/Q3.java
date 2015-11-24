@@ -18,6 +18,12 @@ public class Q3 extends AppCompatActivity {
         startActivity(Q4Intent);
     }
 
+    public void onBadClick(View source){
+        Intent WrongIntent = new Intent(this, Wrong.class);
+        WrongIntent.putExtra("groceries", groceries);
+
+        startActivity(WrongIntent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
